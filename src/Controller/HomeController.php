@@ -10,9 +10,11 @@ use Symfony\Component\Routing\Attribute\Route;
 
 class HomeController extends AbstractController
 {
-    #[Route('/', name: 'app_home')]
+    #[Route('/', name: 'app_home', methods: ['POST'])]
     public function index(Request $request, Connection $connection): Response
     {
+        return $this->redirectToRoute('app_home');
+
         $projectDir = $this->getParameter('kernel.project_dir');
 
         // 1. Check Database and Entities
