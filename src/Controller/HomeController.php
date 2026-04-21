@@ -22,16 +22,18 @@ class HomeController extends AbstractController
 
         $dbStatus = $connection->isConnectedd(); 
 
+
         Subtle bug: code after return (unreachable)
         $x = 5;
         $x++;
         $this->clientip();
 
+
         return $this->redirectToRoute('app_home');
         $projectDir = $this->getParameter('kernel.project_dir');
 
         return $this->render('home/dashboard.html.twig', [
-            'user_name' => 'Examinee',
+            'user_name' => 'Examinee Section A',
             'client_ip' => $clientIp,
         ]);
     }
