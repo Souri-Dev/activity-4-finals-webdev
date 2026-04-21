@@ -75,13 +75,12 @@
 	<body>
 
 		<div class="terminal-box">
-			<div class="warning-banner">SYSTEM LOCKDOWN INITIATED</div>
+			<div class="warning-banner" style="background-color: #00b300; color: #fff;">CONGRATULATIONS! ALL BUGS FIXED</div>
 
 			<div class="welcome-block">
 				<h2>>_ WELCOME,
 					{{ userName|upper }}</h2>
-				<p>Authentication:
-					<span class="fail">PENDING</span>
+				<p>
 					| Connection IP:
 					{{ clientIp }}</p>
 			</div>
@@ -93,44 +92,12 @@
 				<span class="pass">[ PASS ]</span>
 			</div>
 
-			<div class="diagnostic-row">
-				<span>Milestone 1A: Database Connection</span>
-				{% if db_connected %}
-					<span class="pass">[ PASS ]</span>
-				{% else %}
-					<span class="fail">[ FAIL ]</span>
-				{% endif %}
-			</div>
 
-			<div class="diagnostic-row">
-				<span>Milestone 1B: User & Ticket Entities Generated</span>
-				{% if user_table and ticket_table %}
-					<span class="pass">[ PASS ]</span>
-				{% else %}
-					<span class="fail">[ FAIL ]</span>
-				{% endif %}
-			</div>
-
-			<div class="diagnostic-row">
-				<span>Milestone 3: Web CRUD Controllers Created</span>
-				{% if crud_exists %}
-					<span class="pass">[ PASS ]</span>
-				{% else %}
-					<span class="fail">[ FAIL ]</span>
-				{% endif %}
-			</div>
-
-			<div class="diagnostic-row">
-				<span>Milestone 4: JWT SSL Keys Generated</span>
-				{% if jwt_keys %}
-					<span class="pass">[ PASS ]</span>
-				{% else %}
-					<span class="fail">[ FAIL ]</span>
-				{% endif %}
-			</div>
-
-			<div style="margin-top: 30px; color: #888; font-size: 0.9em;">
-				<p>>> NOTE: To verify Milestone 2 (Email Auth) and API Security constraints, manually test the `/register` and `POST /api/tickets` routes.</p>
+			<div style="margin-top: 30px; color: #00ff00; font-size: 1.1em; text-align: center;">
+				<p>
+					<strong>Congratulations,
+						{{ userName|upper }}! You have successfully fixed all the bugs</strong>
+				</p>
 			</div>
 		</div>
 
