@@ -18,4 +18,14 @@ This activity demonstrates a simple Symfony controller (`HomeController`) that r
 - Practice identifying unreachable code and subtle bugs.
 - Gain experience debugging and improving PHP/Symfony code.
 
+## Rubric (Total: 50 points)
+
+| Criteria                                 | Points |
+| ---------------------------------------- | ------ |
+| Correctly identifies all issues/bugs     | 15     |
+| Successfully fixes all identified issues | 15     |
+| Code improvements and best practices     | 10     |
+| Code runs without errors after changes   | 10     |
+| **Total**                                | **50** |
+
 ---
